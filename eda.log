@@ -1,24 +1,31 @@
-2025-01-03 15:24:36,615 - INFO - Loading datasets
-2025-01-03 15:24:38,501 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
-2025-01-03 15:24:38,609 - INFO - Missing data: Open    11
+2025-01-03 16:02:18,960 - INFO - Loading datasets
+2025-01-03 16:02:19,508 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-03 16:02:19,587 - INFO - Missing data: Open    11
 dtype: int64
-2025-01-03 15:24:38,716 - INFO - Missing data: Series([], dtype: int64)
-2025-01-03 15:24:38,727 - INFO - Missing data: CompetitionDistance            3
+2025-01-03 16:02:19,693 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:02:19,703 - INFO - Missing data: CompetitionDistance            3
 CompetitionOpenSinceMonth    354
 CompetitionOpenSinceYear     354
 Promo2SinceWeek              544
 Promo2SinceYear              544
 PromoInterval                544
 dtype: int64
-2025-01-03 15:24:38,896 - INFO - Handling missing values for train
-2025-01-03 15:24:39,086 - INFO - Missing data: Series([], dtype: int64)
-2025-01-03 15:24:39,230 - INFO - Missing data: Series([], dtype: int64)
-2025-01-03 15:24:39,252 - INFO - Missing data: Series([], dtype: int64)
-2025-01-03 15:24:42,019 - INFO - Detecting outliers
-2025-01-03 15:24:43,027 - INFO - Detecting outliers
-2025-01-03 15:24:43,077 - INFO - Detecting outliers
-2025-01-03 15:24:45,542 - INFO - Detecting outliers
-2025-01-03 15:24:46,671 - INFO - Detecting outliers
-2025-01-03 15:44:52,800 - INFO - Detecting outliers
-2025-01-03 15:45:06,643 - INFO - Detecting outliers
-2025-01-03 15:48:29,153 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-03 16:02:19,745 - INFO - Handling missing values for train
+2025-01-03 16:02:19,844 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:02:19,871 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:02:19,891 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:02:22,674 - INFO - Detecting outliers
+2025-01-03 16:02:22,737 - INFO - Detecting outliers
+2025-01-03 16:02:22,772 - INFO - Detecting outliers
+2025-01-03 16:02:25,313 - INFO - Detecting outliers
+2025-01-03 16:02:25,463 - INFO - Detecting outliers
+2025-01-03 16:02:25,472 - INFO - Detecting outliers
+2025-01-03 16:02:25,676 - INFO - Detecting outliers
+2025-01-03 16:02:25,947 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-03 16:02:26,645 - INFO - Analyzing sales behavior around state holidays
+2025-01-03 16:02:28,537 - INFO - Sales Analysis Summary:
+2025-01-03 16:02:28,685 - INFO - Average sales for holiday type '0': 5862.657645977981
+2025-01-03 16:02:28,784 - INFO - Average sales for holiday type 'a': 266.16705330700887
+2025-01-03 16:02:28,881 - INFO - Average sales for holiday type 'b': 181.97869955156952
+2025-01-03 16:02:28,968 - INFO - Average sales for holiday type 'c': 151.92207317073172
+2025-01-03 16:02:28,968 - INFO - Holiday sales analysis complete
