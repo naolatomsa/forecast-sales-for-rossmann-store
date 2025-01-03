@@ -21,3 +21,4 @@ dtype: int64
 2025-01-03 15:24:46,671 - INFO - Detecting outliers
 2025-01-03 15:44:52,800 - INFO - Detecting outliers
 2025-01-03 15:45:06,643 - INFO - Detecting outliers
+2025-01-03 15:48:29,153 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
