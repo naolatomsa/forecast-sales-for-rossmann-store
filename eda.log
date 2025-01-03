@@ -453,3 +453,5 @@ Store
 526    6143.203608  12396.180556  6252.976947
 545    6205.571306  12329.944444  6124.373139
 552    4008.190722  10116.820833  6108.630112
+2025-01-03 17:03:57,166 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-03 17:03:57,173 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
