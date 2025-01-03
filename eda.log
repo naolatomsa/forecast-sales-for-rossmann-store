@@ -288,3 +288,7 @@ dtype: int64
 2025-01-03 16:29:37,096 - INFO - Average sales during Post-New Year: 5585.213703822336
 2025-01-03 16:29:37,097 - INFO - Average sales during Pre-Christmas: 5929.983349593496
 2025-01-03 16:29:37,097 - INFO - Seasonal analysis complete
+2025-01-03 16:32:09,851 - INFO - Analyzing correlation between Sales and Customers
+2025-01-03 16:32:10,023 - INFO - Correlation Matrix:               Sales  Customers
+Sales      1.000000   0.920805
+Customers  0.920805   1.000000
