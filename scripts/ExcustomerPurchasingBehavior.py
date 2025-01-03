@@ -49,15 +49,40 @@ def handle_missing_values_for_train(df):
     df.dropna(subset=['Open'], inplace=True)
     return df
 
-def detect_outliers(df, column):
-    """Detect and return outliers based on IQR."""
-    logging.info(f"Detecting outliers in {column}")
-    Q1 = df[column].quantile(0.25)
-    Q3 = df[column].quantile(0.75)
-    IQR = Q3 - Q1
-    outliers = df[(df[column] < (Q1 - 1.5 * IQR)) | (df[column] > (Q3 + 1.5 * IQR))]
-    logging.info(f"Detected {len(outliers)} outliers in {column}")
+
+
+def detect_outliers(data, columns):
+    outliers = {}
+
+    for column in columns:
+        Q1 = data[column].quantile(0.25)
+        Q3 = data[column].quantile(0.75)
+        IQR = Q3 - Q1
+        lower_bound = Q1 - 1.5 * IQR
+        upper_bound = Q3 + 1.5 * IQR
+
+        # Identify outliers
+        outliers[column] = data[(data[column] < lower_bound) | (data[column] > upper_bound)]
+
+        plt.figure(figsize=(8, 6))
+        sns.boxplot(x=data[column], color='skyblue')
+        plt.axvline(lower_bound, color='red', linestyle='--', label='Lower Bound')
+        plt.axvline(upper_bound, color='red', linestyle='--', label='Upper Bound')
+        plt.title(f"Box Plot for {column} with Outlier Bounds")
+        plt.xlabel(column)
+        plt.legend()
+        plt.show()
     return outliers
+
+# Cap and floor outliers for all numeric columns
+def cap_outliers(data, column):
+    Q1 = data[column].quantile(0.25)
+    Q3 = data[column].quantile(0.75)
+    IQR = Q3 - Q1
+    lower_bound = Q1 - 1.5 * IQR
+    upper_bound = Q3 + 1.5 * IQR
+    data[column] = data[column].clip(lower=lower_bound, upper=upper_bound)
+    return data
 
 # Feature Engineering
 def add_date_features(df):
