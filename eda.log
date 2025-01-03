@@ -455,3 +455,20 @@ Store
 552    4008.190722  10116.820833  6108.630112
 2025-01-03 17:03:57,166 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 2025-01-03 17:03:57,173 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-03 17:04:49,769 - INFO - Weekend sales for stores open on weekdays:
+2025-01-03 17:04:49,769 - INFO -       Store        Sales
+0         1  2471.485075
+1         2  1436.552239
+2         3  2217.320896
+3         4  5050.201493
+4         5  1039.552239
+...     ...          ...
+1110   1111  1644.361940
+1111   1112  4296.194030
+1112   1113  2946.787313
+1113   1114  7024.750000
+1114   1115  3386.694030
+
+[1115 rows x 2 columns]
+2025-01-03 17:04:49,791 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-03 17:04:49,804 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
