@@ -53,7 +53,7 @@ def handle_missing_values_for_train(df):
 
 def detect_outliers(data, columns):
     outliers = {}
-
+    
     for column in columns:
         Q1 = data[column].quantile(0.25)
         Q3 = data[column].quantile(0.75)
@@ -72,6 +72,8 @@ def detect_outliers(data, columns):
         plt.xlabel(column)
         plt.legend()
         plt.show()
+        
+    logging.info("Detecting outliers")
     return outliers
 
 # Cap and floor outliers for all numeric columns
@@ -82,6 +84,7 @@ def cap_outliers(data, column):
     lower_bound = Q1 - 1.5 * IQR
     upper_bound = Q3 + 1.5 * IQR
     data[column] = data[column].clip(lower=lower_bound, upper=upper_bound)
+    logging.info("Detecting outliers")
     return data
 
 # Feature Engineering
