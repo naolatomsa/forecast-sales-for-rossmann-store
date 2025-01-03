@@ -440,3 +440,16 @@ Sales      1.000000   0.920805
 Customers  0.920805   1.000000
 2025-01-03 17:02:11,146 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 2025-01-03 17:02:11,152 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-03 17:03:06,062 - INFO - Top stores for promo deployment:
+2025-01-03 17:03:06,062 - INFO - Promo            0             1   Difference
+Store                                        
+261    6636.746564  13539.176389  6902.429825
+963    5729.452749  12461.506944  6732.054195
+876    4776.298969  11353.336111  6577.037142
+375    4909.736254  11429.531944  6519.795690
+726    6192.259450  12631.476389  6439.216939
+1014   6771.820447  13158.006944  6386.186498
+271    4008.640893  10330.906944  6322.266051
+526    6143.203608  12396.180556  6252.976947
+545    6205.571306  12329.944444  6124.373139
+552    4008.190722  10116.820833  6108.630112
