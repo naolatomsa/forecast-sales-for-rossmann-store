@@ -29,3 +29,5 @@ dtype: int64
 2025-01-03 16:02:28,881 - INFO - Average sales for holiday type 'b': 181.97869955156952
 2025-01-03 16:02:28,968 - INFO - Average sales for holiday type 'c': 151.92207317073172
 2025-01-03 16:02:28,968 - INFO - Holiday sales analysis complete
+2025-01-03 16:05:09,855 - INFO - Analyzing seasonal purchasing behavior
+2025-01-03 16:05:10,329 - INFO - Seasonal analysis complete
