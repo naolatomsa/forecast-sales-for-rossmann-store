@@ -1,0 +1,14 @@
+2025-01-03 14:10:57,837 - INFO - Loading datasets
+2025-01-03 14:10:58,447 - INFO - Train shape: (41088, 8), Test shape: (1017209, 9), Store shape: (1115, 10)
+2025-01-03 14:10:58,657 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 14:11:16,582 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 14:11:32,759 - INFO - Missing data: Open    11
+dtype: int64
+2025-01-03 14:19:43,099 - INFO - Missing data: CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-01-03 14:31:08,411 - INFO - trian merged shape: (41088, 17), test merged shape: (1017209, 18)
