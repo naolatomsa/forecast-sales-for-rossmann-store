@@ -1,33 +1,290 @@
-2025-01-03 16:02:18,960 - INFO - Loading datasets
-2025-01-03 16:02:19,508 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
-2025-01-03 16:02:19,587 - INFO - Missing data: Open    11
+2025-01-03 16:10:45,417 - INFO - Loading datasets
+2025-01-03 16:10:46,013 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-03 16:10:46,119 - INFO - Missing data: Open    11
 dtype: int64
-2025-01-03 16:02:19,693 - INFO - Missing data: Series([], dtype: int64)
-2025-01-03 16:02:19,703 - INFO - Missing data: CompetitionDistance            3
+2025-01-03 16:10:46,272 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:10:46,283 - INFO - Missing data: CompetitionDistance            3
 CompetitionOpenSinceMonth    354
 CompetitionOpenSinceYear     354
 Promo2SinceWeek              544
 Promo2SinceYear              544
 PromoInterval                544
 dtype: int64
-2025-01-03 16:02:19,745 - INFO - Handling missing values for train
-2025-01-03 16:02:19,844 - INFO - Missing data: Series([], dtype: int64)
-2025-01-03 16:02:19,871 - INFO - Missing data: Series([], dtype: int64)
-2025-01-03 16:02:19,891 - INFO - Missing data: Series([], dtype: int64)
-2025-01-03 16:02:22,674 - INFO - Detecting outliers
-2025-01-03 16:02:22,737 - INFO - Detecting outliers
-2025-01-03 16:02:22,772 - INFO - Detecting outliers
-2025-01-03 16:02:25,313 - INFO - Detecting outliers
-2025-01-03 16:02:25,463 - INFO - Detecting outliers
-2025-01-03 16:02:25,472 - INFO - Detecting outliers
-2025-01-03 16:02:25,676 - INFO - Detecting outliers
-2025-01-03 16:02:25,947 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
-2025-01-03 16:02:26,645 - INFO - Analyzing sales behavior around state holidays
-2025-01-03 16:02:28,537 - INFO - Sales Analysis Summary:
-2025-01-03 16:02:28,685 - INFO - Average sales for holiday type '0': 5862.657645977981
-2025-01-03 16:02:28,784 - INFO - Average sales for holiday type 'a': 266.16705330700887
-2025-01-03 16:02:28,881 - INFO - Average sales for holiday type 'b': 181.97869955156952
-2025-01-03 16:02:28,968 - INFO - Average sales for holiday type 'c': 151.92207317073172
-2025-01-03 16:02:28,968 - INFO - Holiday sales analysis complete
-2025-01-03 16:05:09,855 - INFO - Analyzing seasonal purchasing behavior
-2025-01-03 16:05:10,329 - INFO - Seasonal analysis complete
+2025-01-03 16:10:46,317 - INFO - Handling missing values for train
+2025-01-03 16:10:46,421 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:10:46,454 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:10:46,479 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:10:49,395 - INFO - Detecting outliers
+2025-01-03 16:10:49,453 - INFO - Detecting outliers
+2025-01-03 16:10:49,495 - INFO - Detecting outliers
+2025-01-03 16:10:51,999 - INFO - Detecting outliers
+2025-01-03 16:10:52,192 - INFO - Detecting outliers
+2025-01-03 16:10:52,202 - INFO - Detecting outliers
+2025-01-03 16:10:52,347 - INFO - Detecting outliers
+2025-01-03 16:10:52,627 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-03 16:10:53,330 - INFO - Analyzing sales behavior around state holidays
+2025-01-03 16:10:55,512 - INFO - Sales Analysis Summary:
+2025-01-03 16:10:55,721 - INFO - Average sales for holiday type '0': 5862.657645977981
+2025-01-03 16:10:55,788 - INFO - Average sales for holiday type 'a': 266.16705330700887
+2025-01-03 16:10:55,855 - INFO - Average sales for holiday type 'b': 181.97869955156952
+2025-01-03 16:10:55,918 - INFO - Average sales for holiday type 'c': 151.92207317073172
+2025-01-03 16:10:55,918 - INFO - Holiday sales analysis complete
+2025-01-03 16:14:26,332 - INFO - Loading datasets
+2025-01-03 16:14:26,867 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-03 16:14:26,945 - INFO - Missing data: Open    11
+dtype: int64
+2025-01-03 16:14:27,049 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:14:27,058 - INFO - Missing data: CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-01-03 16:14:27,118 - INFO - Handling missing values for train
+2025-01-03 16:14:27,241 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:14:27,288 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:14:27,310 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:14:29,835 - INFO - Detecting outliers
+2025-01-03 16:14:29,891 - INFO - Detecting outliers
+2025-01-03 16:14:29,928 - INFO - Detecting outliers
+2025-01-03 16:14:32,328 - INFO - Detecting outliers
+2025-01-03 16:14:32,484 - INFO - Detecting outliers
+2025-01-03 16:14:32,495 - INFO - Detecting outliers
+2025-01-03 16:14:32,648 - INFO - Detecting outliers
+2025-01-03 16:14:32,910 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-03 16:14:33,629 - INFO - Analyzing sales behavior around state holidays
+2025-01-03 16:14:35,474 - INFO - Sales Analysis Summary:
+2025-01-03 16:14:35,543 - INFO - Average sales for Before Holiday: 4147.239256678281
+2025-01-03 16:14:35,603 - INFO - Average sales for During Holiday: 223.4140239605356
+2025-01-03 16:14:35,665 - INFO - Average sales for After Holiday: 760.2559903381642
+2025-01-03 16:14:35,938 - INFO - Average sales for Normal: 5858.645992443164
+2025-01-03 16:14:35,939 - INFO - Holiday sales analysis complete
+2025-01-03 16:17:25,154 - INFO - Loading datasets
+2025-01-03 16:17:25,671 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-03 16:17:25,769 - INFO - Missing data: Open    11
+dtype: int64
+2025-01-03 16:17:25,879 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:17:25,887 - INFO - Missing data: CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-01-03 16:17:25,928 - INFO - Handling missing values for train
+2025-01-03 16:17:26,030 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:17:26,061 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:17:26,087 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:17:28,840 - INFO - Detecting outliers
+2025-01-03 16:17:28,894 - INFO - Detecting outliers
+2025-01-03 16:17:28,930 - INFO - Detecting outliers
+2025-01-03 16:17:31,487 - INFO - Detecting outliers
+2025-01-03 16:17:31,638 - INFO - Detecting outliers
+2025-01-03 16:17:31,647 - INFO - Detecting outliers
+2025-01-03 16:17:31,814 - INFO - Detecting outliers
+2025-01-03 16:17:32,090 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-03 16:17:32,790 - INFO - Analyzing sales behavior before, during, and after holidays
+2025-01-03 16:17:35,207 - INFO - Sales Analysis Summary:
+2025-01-03 16:17:35,208 - INFO - Average sales for After A: 1071.5661648568607
+2025-01-03 16:17:35,208 - INFO - Average sales for After B: 188.41307922272048
+2025-01-03 16:17:35,209 - INFO - Average sales for After C: 155.00841463414633
+2025-01-03 16:17:35,209 - INFO - Average sales for Before A: 4157.353330736268
+2025-01-03 16:17:35,210 - INFO - Average sales for Before B: 2525.9166666666665
+2025-01-03 16:17:35,210 - INFO - Average sales for Before C: 2520.5
+2025-01-03 16:17:35,210 - INFO - Average sales for During A: 223.4140239605356
+2025-01-03 16:17:35,211 - INFO - Average sales for Normal: 5858.645992443164
+2025-01-03 16:17:35,211 - INFO - Holiday sales analysis complete
+2025-01-03 16:19:46,149 - INFO - Loading datasets
+2025-01-03 16:19:46,695 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-03 16:19:46,810 - INFO - Missing data: Open    11
+dtype: int64
+2025-01-03 16:19:46,958 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:19:46,966 - INFO - Missing data: CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-01-03 16:19:46,999 - INFO - Handling missing values for train
+2025-01-03 16:19:47,099 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:19:47,130 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:19:47,150 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:19:50,101 - INFO - Detecting outliers
+2025-01-03 16:19:50,169 - INFO - Detecting outliers
+2025-01-03 16:19:50,210 - INFO - Detecting outliers
+2025-01-03 16:19:52,760 - INFO - Detecting outliers
+2025-01-03 16:19:52,916 - INFO - Detecting outliers
+2025-01-03 16:19:52,925 - INFO - Detecting outliers
+2025-01-03 16:19:53,089 - INFO - Detecting outliers
+2025-01-03 16:19:53,324 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-03 16:19:54,049 - INFO - Analyzing sales behavior before, during, and after holidays
+2025-01-03 16:19:56,716 - INFO - Sales Analysis Summary:
+2025-01-03 16:19:56,717 - INFO - Average sales for After Christmas: 155.00841463414633
+2025-01-03 16:19:56,717 - INFO - Average sales for After Easter: 188.41307922272048
+2025-01-03 16:19:56,717 - INFO - Average sales for After Public Holiday: 1071.5661648568607
+2025-01-03 16:19:56,718 - INFO - Average sales for Before Christmas: 2520.5
+2025-01-03 16:19:56,718 - INFO - Average sales for Before Easter: 2525.9166666666665
+2025-01-03 16:19:56,718 - INFO - Average sales for Before Public Holiday: 4157.353330736268
+2025-01-03 16:19:56,719 - INFO - Average sales for During Public Holiday: 223.4140239605356
+2025-01-03 16:19:56,719 - INFO - Average sales for Normal: 5858.645992443164
+2025-01-03 16:19:56,719 - INFO - Holiday sales analysis complete
+2025-01-03 16:21:56,696 - INFO - Loading datasets
+2025-01-03 16:21:57,223 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-03 16:21:57,341 - INFO - Missing data: Open    11
+dtype: int64
+2025-01-03 16:21:57,454 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:21:57,464 - INFO - Missing data: CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-01-03 16:21:57,511 - INFO - Handling missing values for train
+2025-01-03 16:21:57,613 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:21:57,640 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:21:57,661 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:22:00,353 - INFO - Detecting outliers
+2025-01-03 16:22:00,415 - INFO - Detecting outliers
+2025-01-03 16:22:00,451 - INFO - Detecting outliers
+2025-01-03 16:22:02,931 - INFO - Detecting outliers
+2025-01-03 16:22:03,084 - INFO - Detecting outliers
+2025-01-03 16:22:03,095 - INFO - Detecting outliers
+2025-01-03 16:22:03,251 - INFO - Detecting outliers
+2025-01-03 16:22:03,514 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-03 16:22:04,281 - INFO - Analyzing sales behavior before, during, and after holidays
+2025-01-03 16:22:05,866 - INFO - Sales Analysis Summary:
+2025-01-03 16:22:05,867 - INFO - Average sales for After Christmas: 155.00841463414633
+2025-01-03 16:22:05,868 - INFO - Average sales for After Easter: 188.41307922272048
+2025-01-03 16:22:05,868 - INFO - Average sales for After Public Holiday: 1071.5661648568607
+2025-01-03 16:22:05,869 - INFO - Average sales for Before Christmas: 2520.5
+2025-01-03 16:22:05,869 - INFO - Average sales for Before Easter: 2525.9166666666665
+2025-01-03 16:22:05,870 - INFO - Average sales for Before Public Holiday: 4157.353330736268
+2025-01-03 16:22:05,871 - INFO - Average sales for During Public Holiday: 223.4140239605356
+2025-01-03 16:22:05,871 - INFO - Average sales for Normal: 5858.645992443164
+2025-01-03 16:22:05,871 - INFO - Holiday sales analysis complete
+2025-01-03 16:24:50,813 - INFO - Loading datasets
+2025-01-03 16:24:51,341 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-03 16:24:51,418 - INFO - Missing data: Open    11
+dtype: int64
+2025-01-03 16:24:51,523 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:24:51,534 - INFO - Missing data: CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-01-03 16:24:51,578 - INFO - Handling missing values for train
+2025-01-03 16:24:51,681 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:24:51,708 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:24:51,729 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:24:54,318 - INFO - Detecting outliers
+2025-01-03 16:24:54,372 - INFO - Detecting outliers
+2025-01-03 16:24:54,406 - INFO - Detecting outliers
+2025-01-03 16:24:56,859 - INFO - Detecting outliers
+2025-01-03 16:24:57,007 - INFO - Detecting outliers
+2025-01-03 16:24:57,017 - INFO - Detecting outliers
+2025-01-03 16:24:57,166 - INFO - Detecting outliers
+2025-01-03 16:24:57,412 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-03 16:24:58,112 - INFO - Analyzing sales behavior before, during, and after holidays
+2025-01-03 16:24:59,936 - INFO - Sales Analysis Summary:
+2025-01-03 16:24:59,937 - INFO - Average sales for After Christmas: 155.00841463414633
+2025-01-03 16:24:59,938 - INFO - Average sales for After Easter: 188.41307922272048
+2025-01-03 16:24:59,938 - INFO - Average sales for After Public Holiday: 1071.5661648568607
+2025-01-03 16:24:59,939 - INFO - Average sales for Before Christmas: 2520.5
+2025-01-03 16:24:59,940 - INFO - Average sales for Before Easter: 2525.9166666666665
+2025-01-03 16:24:59,940 - INFO - Average sales for Before Public Holiday: 4157.353330736268
+2025-01-03 16:24:59,941 - INFO - Average sales for During Public Holiday: 223.4140239605356
+2025-01-03 16:24:59,941 - INFO - Average sales for Normal: 5858.645992443164
+2025-01-03 16:24:59,941 - INFO - Holiday sales analysis complete
+2025-01-03 16:28:23,411 - INFO - Loading datasets
+2025-01-03 16:28:23,941 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-03 16:28:24,021 - INFO - Missing data: Open    11
+dtype: int64
+2025-01-03 16:28:24,122 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:28:24,132 - INFO - Missing data: CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-01-03 16:28:24,171 - INFO - Handling missing values for train
+2025-01-03 16:28:24,270 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:28:24,302 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:28:24,322 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:28:26,998 - INFO - Detecting outliers
+2025-01-03 16:28:27,079 - INFO - Detecting outliers
+2025-01-03 16:28:27,133 - INFO - Detecting outliers
+2025-01-03 16:28:29,718 - INFO - Detecting outliers
+2025-01-03 16:28:29,879 - INFO - Detecting outliers
+2025-01-03 16:28:29,889 - INFO - Detecting outliers
+2025-01-03 16:28:30,044 - INFO - Detecting outliers
+2025-01-03 16:28:30,312 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-03 16:28:31,067 - INFO - Analyzing sales behavior before, during, and after holidays
+2025-01-03 16:28:32,599 - INFO - Sales Analysis Summary:
+2025-01-03 16:28:32,600 - INFO - Average sales for After Christmas: 155.00841463414633
+2025-01-03 16:28:32,600 - INFO - Average sales for After Easter: 188.41307922272048
+2025-01-03 16:28:32,601 - INFO - Average sales for After Public Holiday: 1071.5661648568607
+2025-01-03 16:28:32,601 - INFO - Average sales for Before Christmas: 2520.5
+2025-01-03 16:28:32,602 - INFO - Average sales for Before Easter: 2525.9166666666665
+2025-01-03 16:28:32,603 - INFO - Average sales for Before Public Holiday: 4157.353330736268
+2025-01-03 16:28:32,603 - INFO - Average sales for During Public Holiday: 223.4140239605356
+2025-01-03 16:28:32,604 - INFO - Average sales for Normal: 5858.645992443164
+2025-01-03 16:28:32,604 - INFO - Holiday sales analysis complete
+2025-01-03 16:28:32,621 - INFO - Analyzing seasonal purchasing behavior
+2025-01-03 16:28:33,021 - INFO - Seasonal Sales Summary:
+2025-01-03 16:28:33,022 - INFO - Average sales during Christmas: 6562.302006294257
+2025-01-03 16:28:33,022 - INFO - Average sales during Easter: 5656.427543597409
+2025-01-03 16:28:33,022 - INFO - Average sales during New Year: 5412.368299998071
+2025-01-03 16:28:33,023 - INFO - Average sales during Other: 5643.914943099141
+2025-01-03 16:28:33,023 - INFO - Average sales during Post-New Year: 5585.213703822336
+2025-01-03 16:28:33,023 - INFO - Average sales during Pre-Christmas: 5929.983349593496
+2025-01-03 16:28:33,024 - INFO - Seasonal analysis complete
+2025-01-03 16:29:27,213 - INFO - Loading datasets
+2025-01-03 16:29:27,784 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-03 16:29:27,863 - INFO - Missing data: Open    11
+dtype: int64
+2025-01-03 16:29:27,966 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:29:27,974 - INFO - Missing data: CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-01-03 16:29:28,022 - INFO - Handling missing values for train
+2025-01-03 16:29:28,124 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:29:28,166 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:29:28,194 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:29:30,918 - INFO - Detecting outliers
+2025-01-03 16:29:30,977 - INFO - Detecting outliers
+2025-01-03 16:29:31,015 - INFO - Detecting outliers
+2025-01-03 16:29:33,539 - INFO - Detecting outliers
+2025-01-03 16:29:33,685 - INFO - Detecting outliers
+2025-01-03 16:29:33,696 - INFO - Detecting outliers
+2025-01-03 16:29:33,881 - INFO - Detecting outliers
+2025-01-03 16:29:34,136 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-03 16:29:34,812 - INFO - Analyzing sales behavior before, during, and after holidays
+2025-01-03 16:29:36,467 - INFO - Sales Analysis Summary:
+2025-01-03 16:29:36,468 - INFO - Average sales for After Christmas: 155.00841463414633
+2025-01-03 16:29:36,469 - INFO - Average sales for After Easter: 188.41307922272048
+2025-01-03 16:29:36,470 - INFO - Average sales for After Public Holiday: 1071.5661648568607
+2025-01-03 16:29:36,471 - INFO - Average sales for Before Christmas: 2520.5
+2025-01-03 16:29:36,472 - INFO - Average sales for Before Easter: 2525.9166666666665
+2025-01-03 16:29:36,472 - INFO - Average sales for Before Public Holiday: 4157.353330736268
+2025-01-03 16:29:36,473 - INFO - Average sales for During Public Holiday: 223.4140239605356
+2025-01-03 16:29:36,473 - INFO - Average sales for Normal: 5858.645992443164
+2025-01-03 16:29:36,473 - INFO - Holiday sales analysis complete
+2025-01-03 16:29:36,496 - INFO - Analyzing seasonal purchasing behavior
+2025-01-03 16:29:37,093 - INFO - Seasonal Sales Summary:
+2025-01-03 16:29:37,094 - INFO - Average sales during Christmas: 6562.302006294257
+2025-01-03 16:29:37,095 - INFO - Average sales during Easter: 5656.427543597409
+2025-01-03 16:29:37,095 - INFO - Average sales during New Year: 5412.368299998071
+2025-01-03 16:29:37,096 - INFO - Average sales during Other: 5643.914943099141
+2025-01-03 16:29:37,096 - INFO - Average sales during Post-New Year: 5585.213703822336
+2025-01-03 16:29:37,097 - INFO - Average sales during Pre-Christmas: 5929.983349593496
+2025-01-03 16:29:37,097 - INFO - Seasonal analysis complete

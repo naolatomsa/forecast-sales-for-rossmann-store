@@ -112,53 +112,107 @@ def plot_promo_distribution(train, test):
     plt.legend()
     plt.show()
 
-# Analyze sales behavior before, during, and after state holidays.
 def analyze_holiday_sales(df):
-    """Analyze sales behavior before, during, and after state holidays."""
-    logging.info("Analyzing sales behavior around state holidays")
+    """Analyze sales behavior before, during, and after specific holidays (Public Holiday, Easter, Christmas)."""
+    logging.info("Analyzing sales behavior before, during, and after holidays")
 
-    # Ensure 'StateHoliday' is treated as a categorical variable
+    # Ensure 'Date' and 'StateHoliday' are appropriately formatted
+    df['Date'] = pd.to_datetime(df['Date'])
     df['StateHoliday'] = df['StateHoliday'].astype(str)
 
-    # Filter holiday and non-holiday sales
-    holiday_sales = df[df['StateHoliday'].isin(['a', 'b', 'c'])]
-    non_holiday_sales = df[df['StateHoliday'] == '0']
+    # Sort data by date
+    df = df.sort_values(by='Date')
 
-    # Boxplot: Sales distribution for different holidays
+    # Add flags for holidays
+    df['IsHoliday'] = df['StateHoliday'].isin(['a', 'b', 'c'])
+
+    # Create before and after flags for each holiday type
+    for holiday in ['a', 'b', 'c']:
+        df[f'Before_{holiday}'] = df['StateHoliday'].shift(-1, fill_value='0') == holiday
+        df[f'After_{holiday}'] = df['StateHoliday'].shift(1, fill_value='0') == holiday
+
+    # Create holiday categories
+    df['HolidayCategory'] = 'Normal'
+    for holiday in ['a', 'b', 'c']:
+        df.loc[df['StateHoliday'] == holiday, 'HolidayCategory'] = f'During {holiday.upper()}'
+        df.loc[df[f'Before_{holiday}'], 'HolidayCategory'] = f'Before {holiday.upper()}'
+        df.loc[df[f'After_{holiday}'], 'HolidayCategory'] = f'After {holiday.upper()}'
+
+    # Map holidays to their names
+    holiday_mapping = {
+        'Before A': 'Before Public Holiday',
+        'During A': 'During Public Holiday',
+        'After A': 'After Public Holiday',
+        'Before B': 'Before Easter',
+        'During B': 'During Easter',
+        'After B': 'After Easter',
+        'Before C': 'Before Christmas',
+        'During C': 'During Christmas',
+        'After C': 'After Christmas',
+        'Normal': 'Normal'
+    }
+    df['HolidayCategory'] = df['HolidayCategory'].replace(holiday_mapping)
+
+
+    # Barplot: Average sales by holiday category
+    sales_summary = df.groupby('HolidayCategory')['Sales'].mean().reset_index()
     plt.figure(figsize=(12, 6))
-    sns.boxplot(x='StateHoliday', y='Sales', data=df)
-    plt.title("Sales Distribution During Holidays and Non-Holidays")
-    plt.xlabel("State Holiday (0 = None, a = Public, b = Easter, c = Christmas)")
-    plt.ylabel("Sales")
-    plt.show()
-
-    # Barplot: Average sales by holiday type
-    sales_summary = df.groupby('StateHoliday')['Sales'].mean().reset_index()
-    plt.figure(figsize=(10, 6))
-    sns.barplot(x='StateHoliday', y='Sales', data=sales_summary, order=['0', 'a', 'b', 'c'])
-    plt.title("Average Sales During Holidays and Non-Holidays")
-    plt.xlabel("State Holiday (0 = None, a = Public, b = Easter, c = Christmas)")
+    sns.barplot(x='HolidayCategory', y='Sales', data=sales_summary, hue='HolidayCategory', palette='viridis', order=holiday_mapping.values())
+    plt.title("Average Sales Before, During, and After Holidays")
+    plt.xlabel("Holiday Category")
     plt.ylabel("Average Sales")
+    plt.xticks(rotation=45)
     plt.show()
 
-    # Logging average sales
+    # Logging summary
     logging.info("Sales Analysis Summary:")
-    for holiday_type in ['0', 'a', 'b', 'c']:
-        avg_sales = df[df['StateHoliday'] == holiday_type]['Sales'].mean()
-        logging.info(f"Average sales for holiday type '{holiday_type}': {avg_sales}")
+    for category in sales_summary['HolidayCategory']:
+        avg_sales = sales_summary[sales_summary['HolidayCategory'] == category]['Sales'].values[0]
+        logging.info(f"Average sales for {category}: {avg_sales}")
 
     logging.info("Holiday sales analysis complete")
 
 
 # Seasonal Behavior
-def analyze_seasonality(df):
+def analyze_seasonal_behaviors(df):
+    """Analyze seasonal purchasing behaviors, including Christmas, Easter, and other holidays."""
     logging.info("Analyzing seasonal purchasing behavior")
-    seasonal_sales = df.groupby('Month')['Sales'].mean()
+
+    # Ensure 'Date' and 'StateHoliday' are appropriately formatted
+    df['Date'] = pd.to_datetime(df['Date'])
+    df['StateHoliday'] = df['StateHoliday'].astype(str)
+
+    # Extract month and add a 'Season' column for seasonal analysis
+    df['Month'] = df['Date'].dt.month
+    df['Season'] = df['Month'].map({
+        12: 'Christmas',
+        4: 'Easter',  # Assuming April typically includes Easter
+        1: 'New Year',
+        11: 'Pre-Christmas',
+        2: 'Post-New Year'
+    }).fillna('Other')
+
+    # Analyze average sales by season
+    seasonal_sales = df.groupby('Season')['Sales'].mean().reset_index()
+
+    # Barplot: Average sales by season
     plt.figure(figsize=(12, 6))
-    seasonal_sales.plot(kind='bar', color='skyblue')
-    plt.title("Average Sales Per Month")
+    sns.barplot(x='Season', y='Sales', hue='Season', data=seasonal_sales, palette='coolwarm')
+    plt.title("Average Sales by Season")
+    plt.xlabel("Season")
+    plt.ylabel("Average Sales")
+    plt.xticks(rotation=45)
     plt.show()
+
+    # Logging average sales for each season
+    logging.info("Seasonal Sales Summary:")
+    for season in seasonal_sales['Season']:
+        avg_sales = seasonal_sales[seasonal_sales['Season'] == season]['Sales'].values[0]
+        logging.info(f"Average sales during {season}: {avg_sales}")
+
     logging.info("Seasonal analysis complete")
+
+
 
 # Correlation Analysis
 def analyze_correlation(df):
