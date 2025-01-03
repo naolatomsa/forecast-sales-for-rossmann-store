@@ -94,6 +94,7 @@ def add_date_features(df):
     df['Month'] = pd.to_datetime(df['Date']).dt.month
     df['Day'] = pd.to_datetime(df['Date']).dt.day
     df['WeekOfYear'] = pd.to_datetime(df['Date']).dt.isocalendar().week
+    logging.info("Feature Engineering")
     return df
 
 # Task 1: Check for distribution in both training and test sets - Promo Distribution
@@ -101,6 +102,8 @@ def add_date_features(df):
 
 def check_promo_distribution(train, test):
     """Plot the distribution of promotions in train and test sets."""
+    logging.info("Promo Distribution")
+
     trian_promo_dist = train['Promo'].value_counts(normalize=True)
     test_promo_dist = test['Promo'].value_counts(normalize=True)
     print("Train Promo Distribution:")
@@ -118,6 +121,8 @@ def check_promo_distribution(train, test):
 
 def analyze_holiday_sales(df):
     """Analyze sales behavior before, during, and after holidays."""
+    logging.info("Analyze sales behavior before, during, and after holidays.")
+
     df['Date'] = pd.to_datetime(df['Date'])
     df['StateHoliday'] = df['StateHoliday'].astype(str)
     df = df.sort_values(by='Date')
@@ -135,7 +140,7 @@ def analyze_holiday_sales(df):
         df.loc[df[f'After_{holiday}'], 'HolidayCategory'] = f'After {holiday.upper()}'
 
     plt.figure(figsize=(12, 6))
-    sns.barplot(x='HolidayCategory', y='Sales', data=df, palette='viridis')
+    sns.barplot(x='HolidayCategory', y='Sales', data=df, hue='HolidayCategory', palette='viridis')
     plt.title("Average Sales Before, During, and After Holidays")
     plt.xticks(rotation=45)
     plt.show()
@@ -144,12 +149,14 @@ def analyze_holiday_sales(df):
 
 def analyze_seasonality(df):
     """Analyze seasonal purchasing behaviors."""
+    logging.info("Analyze seasonal purchasing behaviors.")
+
     df['Date'] = pd.to_datetime(df['Date'])
     df['Month'] = df['Date'].dt.month
     seasonal_sales = df.groupby('Month')['Sales'].mean().reset_index()
 
     plt.figure(figsize=(12, 6))
-    sns.barplot(x='Month', y='Sales', data=seasonal_sales, palette='coolwarm')
+    sns.barplot(x='Month', y='Sales', data=seasonal_sales, hue='Month', palette='coolwarm')
     plt.title("Average Sales Per Month")
     plt.show()
 
@@ -157,6 +164,8 @@ def analyze_seasonality(df):
 
 def correlation_sales_customers(df):
     """Calculate and visualize the correlation between sales and customers."""
+    logging.info("correlation between sales and customers.")
+
     correlation = df[['Sales', 'Customers']].corr()
     logging.info("Correlation Between Sales and Customers:")
     logging.info(correlation)
@@ -169,10 +178,12 @@ def correlation_sales_customers(df):
 
 def promo_effect_on_sales(df):
     """Analyze the effect of promos on sales."""
+    logging.info("effect of promos on sales.")
+
     promo_sales = df.groupby('Promo')['Sales'].mean().reset_index()
 
     plt.figure(figsize=(8, 5))
-    sns.barplot(x='Promo', y='Sales', data=promo_sales, palette='viridis')
+    sns.barplot(x='Promo', y='Sales', data=promo_sales, hue='Promo', palette='viridis')
     plt.title("Effect of Promo on Sales")
     plt.show()
 
@@ -180,6 +191,8 @@ def promo_effect_on_sales(df):
 
 def promo_deployment_recommendations(df):
     """Recommend which stores should deploy promos based on sales data."""
+    logging.info("Promo Deployment Strategies")
+
     promo_effectiveness = df.groupby(['Store', 'Promo'])['Sales'].mean().unstack()
     promo_effectiveness['Difference'] = promo_effectiveness[1] - promo_effectiveness[0]
     top_stores = promo_effectiveness.sort_values(by='Difference', ascending=False).head(10)
@@ -191,17 +204,20 @@ def promo_deployment_recommendations(df):
 # Task 7: Trends During Store Open/Close
 
 def analyze_store_open_close(df):
+    logging.info("Trends During Store Open/Close")
+
     """Analyze customer behavior during store opening and closing times."""
     open_sales = df.groupby('Open')['Sales'].mean().reset_index()
 
     plt.figure(figsize=(8, 5))
-    sns.barplot(x='Open', y='Sales', data=open_sales, palette='coolwarm')
+    sns.barplot(x='Open', y='Sales', data=open_sales, hue='Open', palette='coolwarm')
     plt.title("Average Sales When Store Is Open vs Closed")
     plt.show()
 
 # Task 8: Stores Open All Weekdays and Weekend Impact
 
 def analyze_weekday_weekend_sales(df):
+
     """Analyze sales trends for stores open all weekdays and their weekend performance."""
     weekday_open_stores = df[df['DayOfWeek'].isin([1, 2, 3, 4, 5]) & (df['Open'] == 1)]['Store'].unique()
     weekend_sales = df[(df['Store'].isin(weekday_open_stores)) & (df['DayOfWeek'].isin([6, 7]))]
@@ -211,7 +227,7 @@ def analyze_weekday_weekend_sales(df):
     logging.info(weekend_avg_sales)
 
     plt.figure(figsize=(12, 6))
-    sns.barplot(x='Store', y='Sales', data=weekend_avg_sales, palette='coolwarm')
+    sns.barplot(x='Store', y='Sales', data=weekend_avg_sales, hue='Store', palette='coolwarm')
     plt.title("Average Weekend Sales for Weekday-Open Stores")
     plt.show()
 
@@ -219,16 +235,20 @@ def analyze_weekday_weekend_sales(df):
 
 def assortment_type_effect(df):
     """Check how assortment type affects sales."""
+    logging.info("Assortment Type and Sales")
+
     assortment_sales = df.groupby('Assortment')['Sales'].mean().reset_index()
 
     plt.figure(figsize=(8, 5))
-    sns.barplot(x='Assortment', y='Sales', data=assortment_sales, palette='coolwarm')
+    sns.barplot(x='Assortment', y='Sales', data=assortment_sales,hue='Assortment', palette='coolwarm')
     plt.title("Effect of Assortment Type on Sales")
     plt.show()
 
 # Task 10: Competition Distance Effect
 
 def competition_distance_effect(df):
+    logging.info("Competition Distance Effect")
+
     """Analyze how competition distance affects sales."""
     sns.scatterplot(x='CompetitionDistance', y='Sales', data=df, alpha=0.6)
     plt.title("Effect of Competition Distance on Sales")
@@ -239,6 +259,8 @@ def competition_distance_effect(df):
 # Task 11: Competitor Open/Reopen Impact
 
 def competitor_open_reopen_effect(df):
+    logging.info("Competitor Open/Reopen Impact")
+
     """Analyze the impact of competitor openings or reopenings on sales."""
     df['CompetitorOpen'] = pd.to_datetime(
         df['CompetitionOpenSinceYear'].fillna(0).astype(int).astype(str) + '-' +
@@ -246,36 +268,8 @@ def competitor_open_reopen_effect(df):
     )
     df['MonthsSinceCompetition'] = ((df['Date'] - df['CompetitorOpen']).dt.days / 30).fillna(-1)
 
-    sns.lineplot(x='MonthsSinceCompetition', y='Sales', data=df, ci=None)
+    sns.lineplot(x='MonthsSinceCompetition', y='Sales', data=df, errorbar=None)
     plt.title("Sales Impact by Months Since Competitor Open")
     plt.xlabel("Months Since Competition Opened")
     plt.ylabel("Sales")
     plt.show()
-
-# Main Function to Call Tasks
-
-# def main():
-#     logging.info("Starting exploratory analysis")
-
-#     # Load your data
-#     train = pd.read_csv('train.csv')
-#     test = pd.read_csv('test.csv')
-#     store = pd.read_csv('store.csv')
-
-#     train = pd.merge(train, store, on='Store', how='left')
-#     test = pd.merge(test, store, on='Store', how='left')
-
-#     # Perform tasks
-#     check_promo_distribution(train, test)
-#     analyze_holiday_sales(train)
-#     analyze_seasonality(train)
-#     correlation_sales_customers(train)
-#     promo_effect_on_sales(train)
-#     promo_deployment_recommendations(train)
-#     analyze_store_open_close(train)
-#     analyze_weekday_weekend_sales(train)
-#     assortment_type_effect(train)
-#     competition_distance_effect(train)
-#     competitor_open_reopen_effect(train)
-
-#     logging.info("Exploratory analysis complete")
