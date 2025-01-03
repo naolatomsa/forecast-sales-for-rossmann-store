@@ -32,17 +32,15 @@ def merge_data(train, test, store):
     logging.info(f"trian merged shape: {trian_merged.shape}, test merged shape: {test_merged.shape}")
     return trian_merged, test_merged
 
+
 def handle_missing_values_for_store(df):
-    """Handle missing values in the dataset."""
-    
-    logging.info("Handling missing values for store")
-    df['CompetitionDistance'].fillna(df['CompetitionDistance'].median(), inplace=True)
-    df['CompetitionOpenSinceMonth'].fillna(0, inplace=True)
-    df['CompetitionOpenSinceYear'].fillna(0, inplace=True)
-    df['Promo2SinceYear'].fillna(0, inplace=True)
-    df['Promo2SinceWeek'].fillna(0, inplace=True)
-    df['PromoInterval'].fillna('None', inplace=True)
-    logging.info("Missing values handled")
+    """Handle missing values and prepare the dataset."""
+    df['CompetitionDistance'] = df['CompetitionDistance'].fillna(df['CompetitionDistance'].median())
+    df['CompetitionOpenSinceMonth'] = df['CompetitionOpenSinceMonth'].fillna(0)
+    df['CompetitionOpenSinceYear'] = df['CompetitionOpenSinceYear'].fillna(0)
+    df['Promo2SinceYear'] = df['Promo2SinceYear'].fillna(0)
+    df['Promo2SinceWeek'] = df['Promo2SinceWeek'].fillna(0)
+    df['PromoInterval'] = df['PromoInterval'].fillna('None')
     return df
 
 def handle_missing_values_for_train(df):
