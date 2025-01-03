@@ -292,3 +292,151 @@ dtype: int64
 2025-01-03 16:32:10,023 - INFO - Correlation Matrix:               Sales  Customers
 Sales      1.000000   0.920805
 Customers  0.920805   1.000000
+2025-01-03 16:46:25,622 - INFO - Loading datasets
+2025-01-03 16:46:26,168 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-03 16:46:26,254 - INFO - Missing data: Open    11
+dtype: int64
+2025-01-03 16:46:26,416 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:46:26,427 - INFO - Missing data: CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-01-03 16:46:26,470 - INFO - Handling missing values for train
+2025-01-03 16:46:26,568 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:46:26,597 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:46:26,622 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:46:29,472 - INFO - Detecting outliers
+2025-01-03 16:46:29,538 - INFO - Detecting outliers
+2025-01-03 16:46:29,580 - INFO - Detecting outliers
+2025-01-03 16:46:32,456 - INFO - Detecting outliers
+2025-01-03 16:46:32,626 - INFO - Detecting outliers
+2025-01-03 16:46:32,637 - INFO - Detecting outliers
+2025-01-03 16:46:32,830 - INFO - Detecting outliers
+2025-01-03 16:46:33,093 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-03 16:47:43,502 - INFO - Loading datasets
+2025-01-03 16:47:44,032 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-03 16:47:44,147 - INFO - Missing data: Open    11
+dtype: int64
+2025-01-03 16:47:44,290 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:47:44,308 - INFO - Missing data: CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-01-03 16:47:44,341 - INFO - Handling missing values for train
+2025-01-03 16:47:44,441 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:47:44,477 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:47:44,500 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:47:47,289 - INFO - Detecting outliers
+2025-01-03 16:47:47,346 - INFO - Detecting outliers
+2025-01-03 16:47:47,384 - INFO - Detecting outliers
+2025-01-03 16:47:50,048 - INFO - Detecting outliers
+2025-01-03 16:47:50,203 - INFO - Detecting outliers
+2025-01-03 16:47:50,214 - INFO - Detecting outliers
+2025-01-03 16:47:50,366 - INFO - Detecting outliers
+2025-01-03 16:47:50,634 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-03 16:48:43,322 - INFO - Loading datasets
+2025-01-03 16:48:43,848 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-03 16:48:43,948 - INFO - Missing data: Open    11
+dtype: int64
+2025-01-03 16:48:44,060 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:48:44,078 - INFO - Missing data: CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-01-03 16:48:44,117 - INFO - Handling missing values for train
+2025-01-03 16:48:44,224 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:48:44,249 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:48:44,271 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:48:46,835 - INFO - Detecting outliers
+2025-01-03 16:48:46,891 - INFO - Detecting outliers
+2025-01-03 16:48:46,926 - INFO - Detecting outliers
+2025-01-03 16:48:49,489 - INFO - Detecting outliers
+2025-01-03 16:48:49,759 - INFO - Detecting outliers
+2025-01-03 16:48:49,771 - INFO - Detecting outliers
+2025-01-03 16:48:49,945 - INFO - Detecting outliers
+2025-01-03 16:48:50,207 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-03 16:49:54,098 - INFO - Loading datasets
+2025-01-03 16:49:54,612 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-03 16:49:54,698 - INFO - Missing data: Open    11
+dtype: int64
+2025-01-03 16:49:54,804 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:49:54,812 - INFO - Missing data: CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-01-03 16:49:54,857 - INFO - Handling missing values for train
+2025-01-03 16:49:55,005 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:49:55,031 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:49:55,055 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:49:57,774 - INFO - Detecting outliers
+2025-01-03 16:49:57,830 - INFO - Detecting outliers
+2025-01-03 16:49:57,869 - INFO - Detecting outliers
+2025-01-03 16:50:00,431 - INFO - Detecting outliers
+2025-01-03 16:50:00,581 - INFO - Detecting outliers
+2025-01-03 16:50:00,589 - INFO - Detecting outliers
+2025-01-03 16:50:00,771 - INFO - Detecting outliers
+2025-01-03 16:50:01,058 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-03 16:50:01,631 - INFO - Promo Distribution in Training Set:
+2025-01-03 16:50:01,631 - INFO - Promo
+0    0.618485
+1    0.381515
+Name: proportion, dtype: float64
+2025-01-03 16:50:01,632 - INFO - Promo Distribution in Test Set:
+2025-01-03 16:50:01,632 - INFO - Promo
+0    0.604158
+1    0.395842
+Name: proportion, dtype: float64
+2025-01-03 16:50:01,652 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-03 16:50:01,660 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-03 16:50:01,693 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-03 16:50:01,700 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-03 16:50:19,810 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-03 16:50:19,816 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-03 16:50:20,038 - INFO - Correlation Between Sales and Customers:
+2025-01-03 16:50:20,038 - INFO -               Sales  Customers
+Sales      1.000000   0.920805
+Customers  0.920805   1.000000
+2025-01-03 16:57:45,188 - INFO - Loading datasets
+2025-01-03 16:57:45,733 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-03 16:57:45,819 - INFO - Missing data: Open    11
+dtype: int64
+2025-01-03 16:57:45,922 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:57:45,930 - INFO - Missing data: CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-01-03 16:57:45,972 - INFO - Handling missing values for train
+2025-01-03 16:57:46,070 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:57:46,095 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:57:46,123 - INFO - Missing data: Series([], dtype: int64)
+2025-01-03 16:57:48,922 - INFO - Detecting outliers
+2025-01-03 16:57:48,978 - INFO - Detecting outliers
+2025-01-03 16:57:49,017 - INFO - Detecting outliers
+2025-01-03 16:57:51,660 - INFO - Detecting outliers
+2025-01-03 16:57:51,826 - INFO - Detecting outliers
+2025-01-03 16:57:51,837 - INFO - Detecting outliers
+2025-01-03 16:57:52,039 - INFO - Detecting outliers
+2025-01-03 16:57:52,333 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-03 16:58:11,188 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-03 16:58:11,197 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-03 16:58:11,453 - INFO - Correlation Between Sales and Customers:
+2025-01-03 16:58:11,454 - INFO -               Sales  Customers
+Sales      1.000000   0.920805
+Customers  0.920805   1.000000
+2025-01-03 17:02:11,146 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-03 17:02:11,152 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
