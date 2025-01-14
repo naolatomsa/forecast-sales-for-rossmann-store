@@ -20,7 +20,7 @@ def train_split(trainData):
 
 def build_pipeline(X_train, y_train):
     pipeline = Pipeline(steps=[
-        ('model', RandomForestRegressor(n_estimators=100, random_state=42))
+        ('model', RandomForestRegressor(n_estimators=50, max_depth=2, n_jobs=-1))
     ])
 
     pipeline.fit(X_train, y_train)
@@ -37,7 +37,7 @@ def model_evaluation(pipeline,X_val,y_val):
 
 
 
-def post_prediction_analysis(X_train):
+def post_prediction_analysis(pipeline,X_train):
     # Extract feature importance
     feature_importances = pipeline.named_steps['model'].feature_importances_
     feature_names = X_train.columns

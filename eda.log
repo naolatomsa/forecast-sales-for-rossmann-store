@@ -551,3 +551,27 @@ dtype: int64
 dtype: int64
 2025-01-14 11:30:06,581 - INFO - Missing data: Series([], dtype: int64)
 2025-01-14 11:30:07,042 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 11:44:33,821 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-14 11:44:34,624 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-14 11:44:38,239 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 11:44:38,786 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 13:30:24,878 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-14 13:30:24,989 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-14 13:30:27,320 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 13:30:27,338 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 14:52:46,567 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-14 14:52:47,683 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-14 14:52:49,878 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 14:52:50,506 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 14:57:09,152 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-14 14:57:09,290 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-14 14:57:10,301 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 14:57:10,538 - INFO - Missing data: Series([], dtype: int64)
