@@ -6,9 +6,12 @@ import numpy as np
 def create_lstm_data(data, target_col, look_back=30):
 
     X, y = [], []
+    # Ensure data is numpy array
+    data = np.array(data)
     for i in range(len(data) - look_back):
-        X.append(data[i:i + look_back, :])
-        y.append(data[i + look_back, target_col])
+        # Create sequences for features (X) and corresponding target (y)
+        X.append(data[i:i + look_back, :])  # All features for the current sequence
+        y.append(data[i + look_back, target_col])  # Target is the value in the target column for the next timestep
     return np.array(X), np.array(y)
 
 def build_lstm_model(input_shape, lstm_units=50, dropout_rate=0.2):
@@ -16,13 +19,13 @@ def build_lstm_model(input_shape, lstm_units=50, dropout_rate=0.2):
     model = Sequential([
         LSTM(lstm_units, activation='relu', input_shape=input_shape),
         Dropout(dropout_rate),
-        Dense(1)  # Single output for regression
+        Dense(1)  # Output layer for regression (single value)
     ])
-    model.compile(optimizer='adam', loss='mse')
+    model.compile(optimizer='adam', loss='mse')  # Mean squared error for regression tasks
     return model
 
 def train_lstm_model(model, X, y, epochs=10, batch_size=32, validation_split=0.2):
-
+ 
     print(f"Training LSTM model for {epochs} epochs...")
     history = model.fit(X, y, epochs=epochs, batch_size=batch_size, validation_split=validation_split)
     print("Training complete!")
@@ -32,8 +35,7 @@ def save_lstm_model(model, filename="lstm_model.h5"):
 
     model.save(filename)
     print(f"LSTM model saved as {filename}")
-    
-    
+
     
 # # Example: Reusing the functions in your workflow
 # scaled_train_data = trainData.values  # Assuming trainData is already scaled
