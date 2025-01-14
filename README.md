@@ -14,6 +14,41 @@ This repository contains the exploratory data analysis (EDA) for Rossmann store 
 - **Logging**: Traceable steps for reproducibility.
 
 
+# Task 2: Prediction of Store Sales
+
+    Preprocessing:
+        Convert non-numeric columns, handle missing values, and generate features (e.g., weekdays, holidays).
+        Scale data using StandardScaler.
+
+    Model Building:
+        Use RandomForest Regressor within an sklearn pipeline for regression modeling.
+
+    Loss Function:
+        Select an appropriate loss function for regression (e.g., Mean Squared Error).
+
+    Post Prediction Analysis:
+        Analyze feature importance and estimate confidence intervals.
+
+    Model Serialization:
+        Save models with timestamps for tracking predictions.
+
+    Deep Learning Model:
+        Build a simple LSTM model for time-series forecasting using TensorFlow/PyTorch.
+
+# Task 3: Model Serving API Call
+
+    Create REST API:
+        Use FastAPI to serve the trained model for real-time predictions.
+
+    Define API Endpoints:
+        Create endpoints to handle input data and return predictions.
+
+    Handle Requests:
+        Preprocess data, make predictions using the model, and return results.
+
+    Deployment:
+        Deploy the API to a server or cloud platform for live use.
+
 ## How to Use
 1. Clone the repository:
    \`\`\`bash
@@ -22,8 +57,4 @@ This repository contains the exploratory data analysis (EDA) for Rossmann store 
 2. Install dependencies:
    \`\`\`bash
    pip install -r requirements.txt
-   \`\`\`
-3. Run EDA for Task 1:
-   \`\`\`bash
-   python scripts/ExcustomerPurchasingBehavior.py
    \`\`\`
