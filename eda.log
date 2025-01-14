@@ -545,3 +545,9 @@ dtype: int64
 dtype: int64
 2025-01-14 11:11:15,281 - INFO - Missing data: Series([], dtype: int64)
 2025-01-14 11:11:15,293 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 11:30:03,676 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-14 11:30:04,033 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-14 11:30:06,581 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 11:30:07,042 - INFO - Missing data: Series([], dtype: int64)
