@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import joblib
 import numpy as np
+from fastapi.middleware.cors import CORSMiddleware
 from tensorflow.keras.models import load_model  # type: ignore # For deep learning model
 # import os
 
@@ -44,6 +45,22 @@ FEATURES = [
 
 # Create FastAPI app
 app = FastAPI()
+
+# FastAPI App
+app = FastAPI()
+
+# CORS settings
+origins = [ # Localhost without a port
+    "*",  # Localhost with a port
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,  # Allow frontend origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all HTTP methods (GET, POST, OPTIONS)
+    allow_headers=["*"],  # Allow all headers
+)
 
 # Define the request body schema
 class PredictionRequest(BaseModel):
@@ -103,6 +120,7 @@ async def predict(request: PredictionRequest):
 
     # Return the prediction
     return {"model_type": request.model_type, "prediction": prediction.tolist()}
+
 
 
 
