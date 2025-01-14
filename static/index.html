@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Prediction</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Sales Prediction</h1>
+
+       <form id="prediction-form">
+      <!-- Model Type Selector -->
+      <div class="form-group">
+        <label for="model-type">Select Model Type:</label>
+        <select id="model-type" name="model-type" required>
+          <option value="" disabled selected>Select Model Type</option>
+          <option value="ml">Machine Learning (ML)</option>
+          <option value="dl">Deep Learning (DL)</option>
+        </select>
+      </div>
+
+      <!-- Form fields for input -->
+      <div class="form-group"><label for="Store">Store:</label><input type="number" id="Store" name="Store" required></div>
+      <div class="form-group"><label for="DayOfWeek">Day of Week:</label><input type="number" id="DayOfWeek" name="DayOfWeek" required></div>
+      <div class="form-group"><label for="Open">Open:</label><input type="number" id="Open" name="Open" required></div>
+
+      <div class="form-group"><label for="Promo">Promo:</label><input type="number" id="Promo" name="Promo" required></div>
+      <div class="form-group"><label for="SchoolHoliday">SchoolHoliday:</label><input type="number" id="SchoolHoliday" name="SchoolHoliday" required></div>
+      <div class="form-group"><label for="CompetitionDistance">Competition Distance:</label><input type="number" id="CompetitionDistance" name="CompetitionDistance" required></div>
+
+      <div class="form-group"><label for="Promo2">Promo2:</label><input type="number" id="Promo2" name="Promo2" required></div>
+      <div class="form-group"><label for="Promo2SinceWeek">Promo2 Since Week:</label><input type="number" id="Promo2SinceWeek" name="Promo2SinceWeek" required></div>
+      <div class="form-group"><label for="Promo2SinceYear">Promo2 Since Year:</label><input type="number" id="Promo2SinceYear" name="Promo2SinceYear" required></div>
+
+      <div class="form-group"><label for="Year">Year:</label><input type="number" id="Year" name="Year" required></div>
+      <div class="form-group"><label for="Month">Month:</label><input type="number" id="Month" name="Month" required></div>
+      <div class="form-group"><label for="Day">Day:</label><input type="number" id="Day" name="Day" required></div>
+
+      <div class="form-group"><label for="WeekOfYear">Week of Year:</label><input type="number" id="WeekOfYear" name="WeekOfYear" required></div>
+      <div class="form-group"><label for="CompetitionOpenSince">Competition Open Since:</label><input type="number" id="CompetitionOpenSince" name="CompetitionOpenSince" required></div>
+      <div class="form-group"><label for="Promo2ActiveMonths">Promo2 Active Months:</label><input type="number" id="Promo2ActiveMonths" name="Promo2ActiveMonths" required></div>
+
+      <div class="form-group"><label for="StateHoliday_0">StateHoliday_0:</label><input type="number" id="StateHoliday_0" name="StateHoliday_0" required></div>
+      <div class="form-group"><label for="StateHoliday_a">StateHoliday_a:</label><input type="number" id="StateHoliday_a" name="StateHoliday_a" required></div>
+      <div class="form-group"><label for="StoreType_b">StoreType_b:</label><input type="number" id="StoreType_b" name="StoreType_b" required></div>
+
+      <div class="form-group"><label for="StoreType_c">StoreType_c:</label><input type="number" id="StoreType_c" name="StoreType_c" required></div>
+      <div class="form-group"><label for="StoreType_d">StoreType_d:</label><input type="number" id="StoreType_d" name="StoreType_d" required></div>
+      <div class="form-group"><label for="Assortment_b">Assortment_b:</label><input type="number" id="Assortment_b" name="Assortment_b" required></div>
+
+      <div class="form-group"><label for="Assortment_c">Assortment_c:</label><input type="number" id="Assortment_c" name="Assortment_c" required></div>
+      <div class="form-group"><label for="PromoInterval_Jan_Apr_Jul_Oct">PromoInterval_Jan_Apr_Jul_Oct:</label><input type="number" id="PromoInterval_Jan_Apr_Jul_Oct" name="PromoInterval_Jan_Apr_Jul_Oct" required></div>
+      <div class="form-group"><label for="PromoInterval_Mar_Jun_Sept_Dec">PromoInterval_Mar_Jun_Sept_Dec:</label><input type="number" id="PromoInterval_Mar_Jun_Sept_Dec" name="PromoInterval_Mar_Jun_Sept_Dec" required></div>
+
+      <div class="form-group"><label for="PromoInterval_None">PromoInterval_None:</label><input type="number" id="PromoInterval_None" name="PromoInterval_None" required></div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="prediction-result" class="result">
+      <!-- The prediction result will be displayed here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

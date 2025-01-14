@@ -588,3 +588,10 @@ dtype: int64
 2025-01-14 15:21:24,021 - INFO - Missing data: Series([], dtype: int64)
 2025-01-14 15:21:24,059 - INFO - Missing data: Series([], dtype: int64)
 2025-01-14 15:32:57,797 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-01-14 15:40:47,908 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-14 15:40:48,987 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-14 15:40:51,135 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 15:40:51,774 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 15:43:10,468 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
