@@ -77,3 +77,471 @@ Store
 2025-01-03 19:48:22,920 - INFO - Trends During Store Open/Close
 2025-01-03 19:48:23,011 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 2025-01-03 19:48:23,026 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:18:24,481 - INFO - Loading datasets
+2025-01-13 21:18:25,290 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-13 21:18:25,403 - INFO - Missing data: Open    11
+dtype: int64
+2025-01-13 21:18:25,496 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:18:25,514 - INFO - Missing data: CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-01-13 21:18:25,556 - INFO - Handling missing values for train
+2025-01-13 21:18:25,648 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:18:25,677 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:18:25,699 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:18:28,550 - INFO - Detecting outliers
+2025-01-13 21:18:28,617 - INFO - Detecting outliers
+2025-01-13 21:18:28,653 - INFO - Detecting outliers
+2025-01-13 21:18:31,783 - INFO - Detecting outliers
+2025-01-13 21:18:32,117 - INFO - Detecting outliers
+2025-01-13 21:18:32,128 - INFO - Detecting outliers
+2025-01-13 21:18:32,297 - INFO - Detecting outliers
+2025-01-13 21:18:33,732 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-13 21:18:35,184 - INFO - Feature Engineering
+2025-01-13 21:18:35,217 - INFO - Feature Engineering
+2025-01-13 21:18:35,335 - INFO - Promo Distribution
+2025-01-13 21:18:36,691 - INFO - Analyze sales behavior before, during, and after holidays.
+2025-01-13 21:18:56,104 - INFO - Analyze seasonal purchasing behaviors.
+2025-01-13 21:18:56,246 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:18:56,251 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:18:56,625 - INFO - correlation between sales and customers.
+2025-01-13 21:18:56,666 - INFO - Correlation Between Sales and Customers:
+2025-01-13 21:18:56,666 - INFO -               Sales  Customers
+Sales      1.000000   0.920805
+Customers  0.920805   1.000000
+2025-01-13 21:18:57,023 - INFO - effect of promos on sales.
+2025-01-13 21:18:57,079 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:18:57,084 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:18:57,460 - INFO - Promo Deployment Strategies
+2025-01-13 21:18:57,559 - INFO - Top stores for promo deployment:
+2025-01-13 21:18:57,559 - INFO - Promo            0             1   Difference
+Store                                        
+261    6636.746564  13539.176389  6902.429825
+963    5729.452749  12461.506944  6732.054195
+876    4776.298969  11353.336111  6577.037142
+375    4909.736254  11429.531944  6519.795690
+726    6192.259450  12631.476389  6439.216939
+1014   6771.820447  13158.006944  6386.186498
+271    4008.640893  10330.906944  6322.266051
+526    6143.203608  12396.180556  6252.976947
+545    6205.571306  12329.944444  6124.373139
+552    4008.190722  10116.820833  6108.630112
+2025-01-13 21:18:57,580 - INFO - Trends During Store Open/Close
+2025-01-13 21:18:57,616 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:18:57,622 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:18:58,096 - INFO - Weekend sales for stores open on weekdays:
+2025-01-13 21:18:58,096 - INFO -       Store        Sales
+0         1  2471.485075
+1         2  1436.552239
+2         3  2217.320896
+3         4  5050.201493
+4         5  1039.552239
+...     ...          ...
+1110   1111  1644.361940
+1111   1112  4296.194030
+1112   1113  2946.787313
+1113   1114  7024.750000
+1114   1115  3386.694030
+
+[1115 rows x 2 columns]
+2025-01-13 21:18:58,119 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:18:58,127 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:19:09,228 - INFO - Assortment Type and Sales
+2025-01-13 21:19:10,359 - INFO - Competition Distance Effect
+2025-01-13 21:19:13,833 - INFO - Competitor Open/Reopen Impact
+2025-01-13 21:32:04,161 - INFO - Handling missing values for train
+2025-01-13 21:33:13,117 - INFO - Missing data: PromoInterval     508031
+CompetitorOpen    323348
+dtype: int64
+2025-01-13 21:33:56,329 - INFO - Loading datasets
+2025-01-13 21:33:57,345 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-13 21:33:57,429 - INFO - Missing data: Open    11
+dtype: int64
+2025-01-13 21:33:57,535 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:33:57,545 - INFO - Missing data: CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-01-13 21:33:57,601 - INFO - Handling missing values for train
+2025-01-13 21:33:57,701 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:33:57,732 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:33:57,756 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:34:00,419 - INFO - Detecting outliers
+2025-01-13 21:34:00,473 - INFO - Detecting outliers
+2025-01-13 21:34:00,509 - INFO - Detecting outliers
+2025-01-13 21:34:02,810 - INFO - Detecting outliers
+2025-01-13 21:34:02,956 - INFO - Detecting outliers
+2025-01-13 21:34:02,967 - INFO - Detecting outliers
+2025-01-13 21:34:03,113 - INFO - Detecting outliers
+2025-01-13 21:34:03,786 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-13 21:34:04,772 - INFO - Feature Engineering
+2025-01-13 21:34:04,803 - INFO - Feature Engineering
+2025-01-13 21:34:06,397 - INFO - Promo Distribution
+2025-01-13 21:34:08,166 - INFO - Analyze sales behavior before, during, and after holidays.
+2025-01-13 21:34:29,315 - INFO - Analyze seasonal purchasing behaviors.
+2025-01-13 21:34:29,419 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:34:29,424 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:34:29,653 - INFO - correlation between sales and customers.
+2025-01-13 21:34:30,777 - INFO - Correlation Between Sales and Customers:
+2025-01-13 21:34:30,777 - INFO -               Sales  Customers
+Sales      1.000000   0.920805
+Customers  0.920805   1.000000
+2025-01-13 21:34:30,916 - INFO - effect of promos on sales.
+2025-01-13 21:34:30,953 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:34:30,960 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:34:31,171 - INFO - Promo Deployment Strategies
+2025-01-13 21:34:32,041 - INFO - Top stores for promo deployment:
+2025-01-13 21:34:32,041 - INFO - Promo            0             1   Difference
+Store                                        
+261    6636.746564  13539.176389  6902.429825
+963    5729.452749  12461.506944  6732.054195
+876    4776.298969  11353.336111  6577.037142
+375    4909.736254  11429.531944  6519.795690
+726    6192.259450  12631.476389  6439.216939
+1014   6771.820447  13158.006944  6386.186498
+271    4008.640893  10330.906944  6322.266051
+526    6143.203608  12396.180556  6252.976947
+545    6205.571306  12329.944444  6124.373139
+552    4008.190722  10116.820833  6108.630112
+2025-01-13 21:34:32,054 - INFO - Trends During Store Open/Close
+2025-01-13 21:34:32,089 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:34:32,094 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:34:32,318 - INFO - Weekend sales for stores open on weekdays:
+2025-01-13 21:34:32,318 - INFO -       Store        Sales
+0         1  2471.485075
+1         2  1436.552239
+2         3  2217.320896
+3         4  5050.201493
+4         5  1039.552239
+...     ...          ...
+1110   1111  1644.361940
+1111   1112  4296.194030
+1112   1113  2946.787313
+1113   1114  7024.750000
+1114   1115  3386.694030
+
+[1115 rows x 2 columns]
+2025-01-13 21:34:32,341 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:34:32,349 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:34:42,340 - INFO - Assortment Type and Sales
+2025-01-13 21:34:42,531 - INFO - Competition Distance Effect
+2025-01-13 21:34:46,207 - INFO - Competitor Open/Reopen Impact
+2025-01-13 21:34:55,844 - INFO - Missing data: CompetitorOpen    323348
+dtype: int64
+2025-01-13 21:37:04,590 - INFO - Loading datasets
+2025-01-13 21:37:05,144 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-13 21:37:05,253 - INFO - Missing data: Open    11
+dtype: int64
+2025-01-13 21:37:05,420 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:37:05,429 - INFO - Missing data: CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-01-13 21:37:05,471 - INFO - Handling missing values for train
+2025-01-13 21:37:05,619 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:37:05,674 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:37:05,700 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:37:08,559 - INFO - Detecting outliers
+2025-01-13 21:37:08,617 - INFO - Detecting outliers
+2025-01-13 21:37:08,658 - INFO - Detecting outliers
+2025-01-13 21:37:11,220 - INFO - Detecting outliers
+2025-01-13 21:37:11,370 - INFO - Detecting outliers
+2025-01-13 21:37:11,379 - INFO - Detecting outliers
+2025-01-13 21:37:11,585 - INFO - Detecting outliers
+2025-01-13 21:37:11,843 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-13 21:37:12,276 - INFO - Feature Engineering
+2025-01-13 21:37:12,310 - INFO - Feature Engineering
+2025-01-13 21:37:12,372 - INFO - Promo Distribution
+2025-01-13 21:37:12,515 - INFO - Analyze sales behavior before, during, and after holidays.
+2025-01-13 21:37:27,916 - INFO - Analyze seasonal purchasing behaviors.
+2025-01-13 21:37:27,988 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:37:27,993 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:37:28,214 - INFO - correlation between sales and customers.
+2025-01-13 21:37:28,241 - INFO - Correlation Between Sales and Customers:
+2025-01-13 21:37:28,241 - INFO -               Sales  Customers
+Sales      1.000000   0.920805
+Customers  0.920805   1.000000
+2025-01-13 21:37:28,366 - INFO - effect of promos on sales.
+2025-01-13 21:37:28,405 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:37:28,409 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:37:28,608 - INFO - Promo Deployment Strategies
+2025-01-13 21:37:28,660 - INFO - Top stores for promo deployment:
+2025-01-13 21:37:28,660 - INFO - Promo            0             1   Difference
+Store                                        
+261    6636.746564  13539.176389  6902.429825
+963    5729.452749  12461.506944  6732.054195
+876    4776.298969  11353.336111  6577.037142
+375    4909.736254  11429.531944  6519.795690
+726    6192.259450  12631.476389  6439.216939
+1014   6771.820447  13158.006944  6386.186498
+271    4008.640893  10330.906944  6322.266051
+526    6143.203608  12396.180556  6252.976947
+545    6205.571306  12329.944444  6124.373139
+552    4008.190722  10116.820833  6108.630112
+2025-01-13 21:37:28,673 - INFO - Trends During Store Open/Close
+2025-01-13 21:37:28,707 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:37:28,712 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:37:28,940 - INFO - Weekend sales for stores open on weekdays:
+2025-01-13 21:37:28,940 - INFO -       Store        Sales
+0         1  2471.485075
+1         2  1436.552239
+2         3  2217.320896
+3         4  5050.201493
+4         5  1039.552239
+...     ...          ...
+1110   1111  1644.361940
+1111   1112  4296.194030
+1112   1113  2946.787313
+1113   1114  7024.750000
+1114   1115  3386.694030
+
+[1115 rows x 2 columns]
+2025-01-13 21:37:28,963 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:37:28,971 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:37:38,633 - INFO - Assortment Type and Sales
+2025-01-13 21:37:38,816 - INFO - Competition Distance Effect
+2025-01-13 21:37:40,883 - INFO - Competitor Open/Reopen Impact
+2025-01-13 21:37:45,716 - INFO - Missing data: CompetitorOpen    323348
+dtype: int64
+2025-01-13 21:46:27,510 - INFO - Loading datasets
+2025-01-13 21:47:28,339 - INFO - Loading datasets
+2025-01-13 21:47:33,167 - INFO - Loading datasets
+2025-01-13 21:47:33,703 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-13 21:47:33,871 - INFO - Missing data: Open    11
+dtype: int64
+2025-01-13 21:47:33,980 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:47:34,004 - INFO - Missing data: CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-01-13 21:47:34,056 - INFO - Handling missing values for train
+2025-01-13 21:47:34,151 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:47:34,184 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:47:34,207 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:47:36,980 - INFO - Detecting outliers
+2025-01-13 21:47:37,043 - INFO - Detecting outliers
+2025-01-13 21:47:37,078 - INFO - Detecting outliers
+2025-01-13 21:47:39,675 - INFO - Detecting outliers
+2025-01-13 21:47:39,975 - INFO - Detecting outliers
+2025-01-13 21:47:39,985 - INFO - Detecting outliers
+2025-01-13 21:47:41,729 - INFO - Detecting outliers
+2025-01-13 21:47:43,653 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-13 21:47:45,686 - INFO - Feature Engineering
+2025-01-13 21:47:45,717 - INFO - Feature Engineering
+2025-01-13 21:54:12,774 - INFO - Loading datasets
+2025-01-13 21:54:13,436 - INFO - Train shape: (1017209, 9), Test shape: (41088, 8), Store shape: (1115, 10)
+2025-01-13 21:54:13,585 - INFO - Missing data: Open    11
+dtype: int64
+2025-01-13 21:54:13,713 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:54:13,742 - INFO - Missing data: CompetitionDistance            3
+CompetitionOpenSinceMonth    354
+CompetitionOpenSinceYear     354
+Promo2SinceWeek              544
+Promo2SinceYear              544
+PromoInterval                544
+dtype: int64
+2025-01-13 21:54:13,833 - INFO - Handling missing values for train
+2025-01-13 21:54:13,969 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:54:14,007 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:54:14,033 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 21:54:17,033 - INFO - Detecting outliers
+2025-01-13 21:54:17,086 - INFO - Detecting outliers
+2025-01-13 21:54:17,121 - INFO - Detecting outliers
+2025-01-13 21:54:19,580 - INFO - Detecting outliers
+2025-01-13 21:54:19,734 - INFO - Detecting outliers
+2025-01-13 21:54:19,745 - INFO - Detecting outliers
+2025-01-13 21:54:19,891 - INFO - Detecting outliers
+2025-01-13 21:54:20,125 - INFO - trian merged shape: (1017209, 18), test merged shape: (41077, 17)
+2025-01-13 21:54:20,568 - INFO - Feature Engineering
+2025-01-13 21:54:20,602 - INFO - Feature Engineering
+2025-01-13 21:54:30,052 - INFO - Promo Distribution
+2025-01-13 21:54:30,209 - INFO - Analyze sales behavior before, during, and after holidays.
+2025-01-13 21:54:46,485 - INFO - Analyze seasonal purchasing behaviors.
+2025-01-13 21:54:46,585 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:54:46,590 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:54:46,829 - INFO - correlation between sales and customers.
+2025-01-13 21:54:46,855 - INFO - Correlation Between Sales and Customers:
+2025-01-13 21:54:46,855 - INFO -               Sales  Customers
+Sales      1.000000   0.920805
+Customers  0.920805   1.000000
+2025-01-13 21:54:47,046 - INFO - effect of promos on sales.
+2025-01-13 21:54:47,082 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:54:47,087 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:54:47,200 - INFO - Promo Deployment Strategies
+2025-01-13 21:54:47,249 - INFO - Top stores for promo deployment:
+2025-01-13 21:54:47,249 - INFO - Promo            0             1   Difference
+Store                                        
+261    6636.746564  13539.176389  6902.429825
+963    5729.452749  12461.506944  6732.054195
+876    4776.298969  11353.336111  6577.037142
+375    4909.736254  11429.531944  6519.795690
+726    6192.259450  12631.476389  6439.216939
+1014   6771.820447  13158.006944  6386.186498
+271    4008.640893  10330.906944  6322.266051
+526    6143.203608  12396.180556  6252.976947
+545    6205.571306  12329.944444  6124.373139
+552    4008.190722  10116.820833  6108.630112
+2025-01-13 21:54:47,262 - INFO - Trends During Store Open/Close
+2025-01-13 21:54:47,297 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:54:47,301 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:54:47,531 - INFO - Weekend sales for stores open on weekdays:
+2025-01-13 21:54:47,531 - INFO -       Store        Sales
+0         1  2471.485075
+1         2  1436.552239
+2         3  2217.320896
+3         4  5050.201493
+4         5  1039.552239
+...     ...          ...
+1110   1111  1644.361940
+1111   1112  4296.194030
+1112   1113  2946.787313
+1113   1114  7024.750000
+1114   1115  3386.694030
+
+[1115 rows x 2 columns]
+2025-01-13 21:54:47,556 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:54:47,563 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-01-13 21:54:58,329 - INFO - Assortment Type and Sales
+2025-01-13 21:54:58,516 - INFO - Competition Distance Effect
+2025-01-13 21:55:00,894 - INFO - Competitor Open/Reopen Impact
+2025-01-13 21:55:06,334 - INFO - Missing data: CompetitorOpen    323348
+dtype: int64
+2025-01-13 21:55:27,608 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-13 22:10:31,165 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-13 22:10:48,930 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-13 22:15:26,405 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 22:33:34,616 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 22:33:43,098 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 22:33:54,610 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 22:34:29,008 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-13 22:34:30,112 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-13 22:34:36,299 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 22:34:36,314 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 22:37:07,295 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-13 22:37:07,364 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-13 22:37:09,718 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 22:37:09,730 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 22:39:50,362 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-13 22:39:50,430 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-13 22:39:53,298 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 22:39:54,614 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 22:42:01,531 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-13 22:42:01,598 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-13 22:42:04,771 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 22:42:04,785 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 22:47:55,956 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-13 22:47:56,058 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-13 22:48:52,452 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-13 22:48:52,541 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-13 22:48:53,305 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 22:48:53,315 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 22:57:15,452 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-13 22:57:15,547 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-13 22:57:16,760 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 22:57:16,796 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 23:03:16,180 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-13 23:03:16,293 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-13 23:03:17,317 - INFO - Missing data: Series([], dtype: int64)
+2025-01-13 23:03:17,330 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 09:10:32,625 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-14 09:10:33,005 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-14 09:10:34,963 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 09:10:34,975 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 09:34:11,217 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-14 09:34:12,380 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-14 09:36:12,964 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-14 09:36:14,032 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-14 09:36:15,946 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 09:36:16,070 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 09:37:48,417 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-14 09:37:48,531 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-14 09:37:49,699 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 09:37:49,777 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 09:38:26,983 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-14 09:38:27,274 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-14 09:38:28,508 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 09:38:29,005 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 09:39:07,106 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-14 09:39:07,290 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-14 09:39:09,206 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 09:39:10,164 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 09:41:52,095 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-14 09:41:52,173 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-14 09:41:53,168 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 09:41:53,180 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 09:55:33,064 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-14 09:55:33,139 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-14 09:55:34,251 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 09:55:34,260 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 10:02:19,123 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-14 10:02:19,191 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-14 10:02:20,425 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 10:02:20,435 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 10:03:57,071 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-14 10:03:57,885 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-14 10:03:59,159 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 10:03:59,190 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 10:05:48,624 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-14 10:05:48,688 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-14 10:05:49,982 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 10:05:50,000 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 11:11:10,716 - INFO - Missing data: PromoInterval    508031
+dtype: int64
+2025-01-14 11:11:11,840 - INFO - Missing data: PromoInterval    17221
+dtype: int64
+2025-01-14 11:11:15,281 - INFO - Missing data: Series([], dtype: int64)
+2025-01-14 11:11:15,293 - INFO - Missing data: Series([], dtype: int64)
